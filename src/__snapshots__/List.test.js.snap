@@ -12,12 +12,132 @@ exports[`List Component List UI renders as expected 1`] = `
   <div
     className="List-cards"
   >
-     /&gt; ))}
+    <div
+      className="Card"
+    >
+      <h3>
+        First card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+      <button
+        type="button"
+      >
+         delete 
+      </button>
+    </div>
+    <div
+      className="Card"
+    >
+      <h3>
+        Second card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+      <button
+        type="button"
+      >
+         delete 
+      </button>
+    </div>
+    <div
+      className="Card"
+    >
+      <h3>
+        Fifth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+      <button
+        type="button"
+      >
+         delete 
+      </button>
+    </div>
+    <div
+      className="Card"
+    >
+      <h3>
+        Sixth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+      <button
+        type="button"
+      >
+         delete 
+      </button>
+    </div>
+    <div
+      className="Card"
+    >
+      <h3>
+        Seventh card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+      <button
+        type="button"
+      >
+         delete 
+      </button>
+    </div>
+    <div
+      className="Card"
+    >
+      <h3>
+        Tenth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+      <button
+        type="button"
+      >
+         delete 
+      </button>
+    </div>
+    <div
+      className="Card"
+    >
+      <h3>
+        Twelth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+      <button
+        type="button"
+      >
+         delete 
+      </button>
+    </div>
+    <div
+      className="Card"
+    >
+      <h3>
+        Thirteenth card
+      </h3>
+      <p>
+        lorem ipsum
+      </p>
+      <button
+        type="button"
+      >
+         delete 
+      </button>
+    </div>
+    <button
+      className="List-add-button"
+      type="button"
+    >
+      + Add Random Card
+    </button>
   </div>
-  <button
-    type="button"
-  >
-     + Add Random Card 
-  </button>
 </section>
 `;

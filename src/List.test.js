@@ -6,7 +6,7 @@ import List from './List';
 describe('List Component', () => {
 	it('renders without crashing', () => {
 		const div = document.createElement('div');
-		ReactDOM.render(<List />, div);
+		ReactDOM.render(<List cards={[]} />, div);
 		ReactDOM.unmountComponentAtNode(div);
 	});
 
@@ -64,7 +64,11 @@ describe('List Component', () => {
 				m: { title: 'Thirteenth card', content: 'lorem ipsum' }
 			}
 		};
-		const tree = renderer.create(<List cards={props.allCards} />).toJSON();
+		const tree = renderer
+			.create(
+				<List cards={props.lists[0].cardIds.map(id => props.allCards[id])} />
+			)
+			.toJSON();
 		expect(tree).toMatchSnapshot();
 	});
 });
