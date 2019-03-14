@@ -65,18 +65,18 @@ describe('List Component', () => {
 				m: { title: 'Thirteenth card', content: 'lorem ipsum' }
 			}
 		};
-		let card = { props.allCards[0] };
 		const tree = renderer
-
 			.create(
 				<section className='List'>
 					<header className='List-header'>
 						<h2>{props.header}</h2>
 					</header>
 					<div className='List-cards'>
-						<Card title={card.title} content={card.content} />
+						{props.cards.map(card => (
+							<Card title={card.title} content={card.content} />
 						))}
 					</div>
+					<button type='button'> + Add Random Card </button>
 				</section>
 			)
 			.toJSON();
