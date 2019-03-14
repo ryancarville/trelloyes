@@ -10,7 +10,7 @@ function List(props) {
 			</header>
 			<div className='List-cards'>
 				{props.cards.map(card => (
-					<Card key={props.cardKey} title={card.title} content={card.content} />
+					<Card title={card.title} content={card.content} />
 				))}
 			</div>
 			<button type='button'> + Add Random Card </button>
