@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import List from './List';
-import Card from './Card';
 
 describe('List Component', () => {
 	it('renders without crashing', () => {
@@ -65,21 +64,7 @@ describe('List Component', () => {
 				m: { title: 'Thirteenth card', content: 'lorem ipsum' }
 			}
 		};
-		const tree = renderer
-			.create(
-				<section className='List'>
-					<header className='List-header'>
-						<h2>{props.header}</h2>
-					</header>
-					<div className='List-cards'>
-						{props.cards.map(card => (
-							<Card title={card.title} content={card.content} />
-						))}
-					</div>
-					<button type='button'> + Add Random Card </button>
-				</section>
-			)
-			.toJSON();
+		const tree = renderer.create(<List cards={props.allCards} />).toJSON();
 		expect(tree).toMatchSnapshot();
 	});
 });
