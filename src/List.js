@@ -1,8 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import './List.css';
-
-function List(props) {
+export default function List(props) {
 	return (
 		<section className='List'>
 			<header className='List-header'>
@@ -32,4 +31,3 @@ function List(props) {
 List.defaultProps = {
 	onClickAdd: () => {}
 };
-export default List;

@@ -64,9 +64,11 @@ class App extends Component {
 
 	render() {
 		const { store } = this.state;
-
 		return (
 			<main className='App'>
+				<header className='App-header'>
+					<h1>Trelloyes!</h1>
+				</header>
 				<div className='App-list'>
 					{store.lists.map(list => (
 						<List
